@@ -1,0 +1,30 @@
+.pricing-cards{
+    margin-block: 70px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 20px;
+}
+.price-card {
+    box-shadow: 1px 0 10px hsl(0deg 0% 0% / 10%);
+    padding: 15px;
+    text-align: center;
+}
+.price-card .icon{
+    font-size: 2.8rem;
+    color: var(--color-primary);
+    background-color: var(--background-primary);
+    padding: 18px;
+    border-radius: 50%;
+    border: 1px solid;
+
+}
+.price-card p:nth-of-type(1) {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1.6rem;
+}
+.price-card p:nth-of-type(2) {
+    font-size: 1.8rem;
+    line-height: 1.8;
+}

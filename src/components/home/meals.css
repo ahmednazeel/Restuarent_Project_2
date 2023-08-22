@@ -1,0 +1,12 @@
+.meals {
+    padding-block:var(--padding_9) ;
+}
+.meals-list li {
+    padding-block: 10px;
+    font-size: 1.8rem;
+
+}
+.meals-list li.one{
+    font-size: 2rem;
+    font-weight: 900;
+}

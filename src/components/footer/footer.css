@@ -1,0 +1,33 @@
+.footer {
+    border-top: 1px solid #eee;
+    margin-top: 12rem;
+    padding: 12rem 40px 40px 40px;
+}
+.footer-content {
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.logo-footer {
+    width: 200px;
+    margin-bottom: 1.5rem;
+}
+.copyright {
+    font-size: 2rem;
+    color: #777;
+    font-style: italic;
+}
+.footer-list .first{
+    margin-bottom: 1.3rem;
+}
+
+.footer-list li{
+    font-size: 16px;
+    color: #777;
+}
+@media (max-width:652px) {
+    .footer {
+        margin-top: 6rem;
+        padding: 6rem 0px 40px 0px;
+        text-align: center;
+    }   
+}

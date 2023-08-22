@@ -1,0 +1,74 @@
+.navbar{
+    padding: 20px 40px !important;
+    background-color: var(--background-Primary);
+    position: relative;
+    box-shadow: 1px 0 15px hsl(0deg 0% 0% / 20%);
+}
+.nav-links {padding-top: 8px;}
+.navbar .link-item a:hover{
+    color: var(--color-primary);
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+.btn_toggle{display: none;}
+ul.nav-links-mobile{display: none !important;}
+@media (max-width:954px) {
+    ul.nav-links{
+        display: none !important;
+    }
+    ul.nav-links-mobile{
+        display: block !important;
+        position: absolute;
+        flex-direction: column;
+        top: 71px;
+        left: -250px;
+        background-color: white;
+        height: calc(100vh - 71px);
+        width: 220px;
+        z-index: 6;
+        transition:left 0.5s;
+        -webkit-transition:left 0.5s;
+        -moz-transition:left 0.5s;
+        -ms-transition:left 0.5s;
+        -o-transition:left 0.5s;
+    }ul.nav-links-mobile.active{left: 0;}
+    ul.nav-links-mobile li{
+        padding-block:40px;
+        border-top: 1px solid var(--color-secondary);
+    }
+    .btn_toggle{display: block; padding-inline: 10px;}
+    .btn_toggle span {
+        width: 34px;
+        height: 3px;
+        background-color: var(--color-secondary);
+        display: block;
+        transform-origin: left;
+    }.btn_toggle:hover span{
+        animation: menuBtn 400ms ease-in-out alternate infinite;
+        -webkit-animation: menuBtn 400ms ease-in-out alternate infinite;
+    }
+    .btn_toggle span:not(:last-child){margin-block-end: 3px;}
+    
+    .btn_toggle:hover span{background-color: white;}
+    .btn_toggle:hover .line-2{ animation-delay:150ms;}
+    .btn_toggle:hover .line-3{ animation-delay:300ms;}
+    @keyframes menuBtn {
+        0%{
+            transform: scale(1);
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            -ms-transform: scale(1);
+            -o-transform: scale(1);
+          }
+          100%{
+            transform: scale(0.5);
+            -webkit-transform: scale(0.5);
+            -moz-transform: scale(0.5);
+            -ms-transform: scale(0.5);
+            -o-transform: scale(0.5);
+          }
+    }
+}

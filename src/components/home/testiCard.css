@@ -1,0 +1,13 @@
+.testi-card img{
+    width: 40px;
+    border-radius: 50%;
+    height: 40px;
+}
+.testi-info p{
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+.testi-info span{
+    font-size: 1.5rem;
+    font-style:italic ;
+}

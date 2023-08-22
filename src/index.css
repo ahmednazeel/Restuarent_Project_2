@@ -1,0 +1,35 @@
+:root {
+  --background-primary: #fdf2e9;
+  --color-primary:#e67e22;
+  --color-secondary:#101010;
+  --padding_9:9.6rem;
+  --margin_9:9.6rem;
+  --fs_1-6:1.6rem;
+  --fs_1-8:1.8rem;
+  --fs_2:2rem;
+  --fs_2-4:2.4rem;
+  --fs_3-6:3.6rem;
+  --fs_4-4:4.4rem;
+  --line_1-6 :1.6;
+}
+
+body {  
+  font-family: 'Rubik', sans-serif;
+}
+.font_rubik{font-family: 'Rubik Wet Paint', cursive;}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none !important;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+ul {
+  padding-left: 0 !important;
+}
+html {
+    font-size: 10px;
+}
+
